@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New World - Reviews</title>
+    <style>
+        /* Basic styling for old internet/emo aesthetic */
+        body {
+            font-family: "Courier New", Courier, monospace;
+            background-color: #111;
+            color: #eee;
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            color: #ff69b4; /* Emo pink */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        nav {
+            background-color: #222;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: #eee;
+            font-weight: bold;
+        }
+        .container {
+            padding: 20px;
+        }
+        .review-item {
+            border: 1px solid #444;
+            margin: 10px 0;
+            padding: 10px;
+        }
+        .sort-options {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Reviews Section -->
+    <div id="reviews" class="container">
+        <h1>Reviews</h1>
+        <div class="sort-options">
+            <button onclick="sortByNewest()">Sort by Newest</button>
+            <button onclick="sortAlphabetically()">Sort Alphabetically</button>
+        </div>
+        <div class="review-item">
+            <a href="coldvisions-review.html">
+                <img src="images/coldvisionscover.png" alt="Coldvisionscover">
+                <h2>Bladee's Greatest Album</h2>
+                <p>By Richmin</p>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Sorting functionality for reviews
+        function sortByNewest() {
+            const reviews = document.querySelectorAll('.review-item');
+            const container = document.getElementById('reviews');
+            const sorted = Array.from(reviews).sort((a, b) => {
+                return new Date(b.dataset.date) - new Date(a.dataset.date);
+            });
+            sorted.forEach(review => container.appendChild(review));
+        }
+
+        function sortAlphabetically() {
+            const reviews = document.querySelectorAll('.review-item');
+            const container = document.getElementById('reviews');
+            const sorted = Array.from(reviews).sort((a, b) => {
+                return a.querySelector('h2').textContent.localeCompare(b.querySelector('h2').textContent);
+            });
+            sorted.forEach(review => container.appendChild(review));
+        }
+    </script>
+</body>
+</html>

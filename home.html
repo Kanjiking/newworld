@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New World - Home</title>
+    <style>
+        /* Basic styling for old internet/emo aesthetic */
+        body {
+            font-family: "Courier New", Courier, monospace;
+            background-color: #111;
+            color: #eee;
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            color: #ff69b4; /* Emo pink */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        nav {
+            background-color: #222;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: #eee;
+            font-weight: bold;
+        }
+        .container {
+            padding: 20px;
+        }
+        .home-preview {
+            border: 1px solid #444;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #222; /* Matches the original background */
+            display: flex;
+            align-items: center;
+        }
+        .home-preview a {
+            display: flex;
+            text-decoration: none;
+            color: inherit;
+            width: 100%;
+        }
+        .preview-content {
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+        .preview-content img {
+            max-width: 100px; /* Smaller image size */
+            height: auto;
+            margin-right: 15px; /* Space between image and text */
+            border: 1px solid #555; /* Optional: Border around the image */
+        }
+        .preview-text {
+            display: flex;
+            flex-direction: column;
+        }
+        .preview-text h2 {
+            font-size: 1.2em;
+            margin: 0;
+        }
+        .preview-text p {
+            margin: 5px 0 0;
+            font-size: 0.9em;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <div id="home" class="container">
+        <h1>Welcome to New World</h1>
+        <p>Reviews ↓</p>
+        <div class="home-preview">
+            <a href="coldvisions-review.html">
+                <div class="preview-content">
+                    <img src="images/coldvisionscover.png" alt="Coldvisionscover">
+                    <div class="preview-text">
+                        <h2>Bladee's Greatest Album</h2>
+                        <p>By Richmin</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

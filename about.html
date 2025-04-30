@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New World - About</title>
+    <style>
+        /* Basic styling for old internet/emo aesthetic */
+        body {
+            font-family: "Courier New", Courier, monospace;
+            background-color: #111;
+            color: #eee;
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            color: #ff69b4; /* Emo pink */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        nav {
+            background-color: #222;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: #eee;
+            font-weight: bold;
+        }
+        .container {
+            padding: 20px;
+        }
+        .about {
+            text-align: center;
+        }
+        .about img {
+            max-width: 100%;
+            height: auto;
+        }
+        .sponsor-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border: 2px solid #fff; /* White rectangle outline */
+        padding: 10px;
+        margin-top: 20px;
+        background-color: #222; /* Optional: Add a background color inside the rectangle */
+        }
+
+        .sponsor-container img {
+            max-width: 30%; /* Adjust size of logos */
+            height: auto;
+            margin: 0 10px; /* Add spacing between logos */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section -->
+    <div id="about" class="container about">
+        <h1>About New World</h1>
+    <p>New World is a group dedicated to finding and reviewing all great music.</p>
+    <div class="sponsor-container">
+        <img src="images/SamitaCyrstalline.jpg" alt="samitalogo">
+        <img src="images/sg2.jpg" alt="sglogo">
+        <img src="images/richminclothinglog.jpg" alt="richminlogo">
+    </div>
+    </div>
+</body>
+</html>

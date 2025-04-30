@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bladee's Greatest Album</title>
+    <style>
+        body {
+            font-family: "Courier New", Courier, monospace;
+            background-color: #111;
+            color: #eee;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #222;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: #eee;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .review-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .review-header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .review-header p {
+            margin: 5px 0;
+        }
+        .review-content {
+            width: 60%;
+            background-color: rgba(34, 34, 34, 0.9); /* Semi-transparent background */
+            padding: 20px;
+            margin: 20px auto;
+            border-left: 5px solid #ff69b4; /* Vertical strip effect */
+            border-right: 5px solid #ff69b4;
+        }
+        .review-content p {
+            line-height: 1.6;
+        }
+        .graphic-border {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            width: 10%;
+            background: url('images/placeholder-graphic.jpg') no-repeat center center;
+            background-size: cover;
+        }
+        .graphic-border.left {
+            left: 0;
+        }
+        .graphic-border.right {
+            right: 0;
+        }
+        .footer {
+            text-align: center;
+            font-size: 0.8em;
+            margin-top: 40px;
+            padding: 10px;
+            border-top: 1px solid #444;
+        }
+        .footer .logos img {
+            max-width: 50px;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Left and Right Graphics -->
+    <div class="graphic-border left"></div>
+    <div class="graphic-border right"></div>
+
+    <!-- Review Content -->
+    <div class="container">
+        <div class="review-header">
+            <h1>Bladee's Greatest Album</h1>
+            <p>By Richmin</p>
+            <p>Published on April 29, 2025</p>
+            <p><em>A Review of Coldvisions by Bladee.</em></p>
+        </div>
+        <div class="review-content">
+            <p>
+                Jason jason jason
+            </p>
+            <!-- Add more review content as needed -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="logos">
+            <img src="images/SamitaCyrstalline.jpg" alt="Samita Logo">
+            <img src="images/sg2.jpg" alt="SG Logo">
+            <img src="images/richminclothinglog.jpg" alt="Richmin Logo">
+        </div>
+        <p>Additional Information: Contact us at welcomenewworld@gmail.com</p>
+    </div>
+</body>
+</html>
